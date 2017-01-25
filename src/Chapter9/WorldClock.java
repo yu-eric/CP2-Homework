@@ -1,7 +1,16 @@
 package Chapter9;
 
-/**
- * Created by eric.j.yu on 1/11/17.
- */
-public class WorldClock {
+public class WorldClock extends Clock {
+
+    public WorldClock(int offset) {
+        super();
+        setHours(getHours() + offset);
+    }
+
+    public void setHours(int hours) {
+        if (hours > 12) {
+            hours %= 12;
+        }
+        super.setHours(hours);
+    }
 }

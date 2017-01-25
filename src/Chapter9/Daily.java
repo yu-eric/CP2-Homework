@@ -1,7 +1,12 @@
 package Chapter9;
 
-/**
- * Created by eric.j.yu on 1/17/17.
- */
-public class Daily {
+public class Daily extends Appointment {
+
+    public Daily(String description) {
+        super(-1, -1, -1, description);     //-1 is a placeholder
+    }
+    public boolean occursOn(int year, int month, int day){
+        return true;
+    }
+
 }
