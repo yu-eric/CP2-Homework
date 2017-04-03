@@ -85,6 +85,7 @@ public class Grid {
         g.add(0, 0, "First Cell");
         g.add(0, 1, "Second Cell");
         g.add(1, 3, "Third Cell");
+        System.out.println(g.getDescription(0,0));
         System.out.println(g.getDescription(0,1));
         System.out.println(g.getDescription(1,3));
     }

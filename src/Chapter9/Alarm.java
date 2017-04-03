@@ -2,8 +2,8 @@ package Chapter9;
 
 
 public class Alarm extends Clock {
-    private int alarmMinutes = -1;
-    private int alarmHours = -1;
+    private int alarmMinutes = 1;
+    private int alarmHours = 1;
 
     public Alarm(int alarmHours, int alarmMinutes) {
         super();
